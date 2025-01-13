@@ -204,7 +204,7 @@ jobs:
       with:
         name: immortalwrt ${{ env.DATE }}
         tag: ${{ env.TAG_DATE }}
-        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
+        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
         allowUpdates: true
         removeArtifacts: true
         token: ${{ secrets.GITHUB_TOKEN }}
